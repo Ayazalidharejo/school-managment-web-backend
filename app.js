@@ -18,7 +18,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://example.com']
+  origin: ['http://localhost:3000']
 }));
 
 app.use(express.json());
@@ -51,4 +51,4 @@ app.get('/', (req, res) => {
 // app.listen(PORT, () => {
 //     console.log(`Server running on port ${PORT}`);
 // });
-modile.exports =app;
+module.exports = app;
