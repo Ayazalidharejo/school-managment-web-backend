@@ -42,6 +42,11 @@ app.use('/api/attendance', attendanceRoutes);
 app.use('/api/feedback', feedbackRoutes);
 app.use('/api/notifications', notificationRoutes);
 
+
+
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to the API!' });
+});
 // const PORT = process.env.PORT || 5000;
 // app.listen(PORT, () => {
 //     console.log(`Server running on port ${PORT}`);
